@@ -5,7 +5,8 @@ Files to create SE Demo lab, for Kubernetes and Veeam Kasten.
 
 Files in this download
 
-## Install scripts.
+## Install scripts
+--
 Kasten.sh - Veeam Kasten install script
 minikube-docker-setup.sh - script to install docker, minikube and kubectl
 
