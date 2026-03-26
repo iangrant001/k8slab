@@ -14,9 +14,9 @@ Files in this download
 
 ### Persistent Volumes
 
-`pv.yaml ` #creates a persistent volume
-`pvc.yaml` #creates a persistent volume claim
-`pv-pod.yaml`  #creates a pod using the pvc
+`pv.yaml ` - creates a persistent volume
+`pvc.yaml` - creates a persistent volume claim
+`pv-pod.yaml` - creates a pod using the pvc
 
 
 
