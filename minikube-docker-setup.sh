@@ -2,6 +2,8 @@
 
 ARCH=$(arch)
 
+## v2 docker, minikube install.
+
 ### installing Docker
 sudo apt-get update -y
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
@@ -39,7 +41,7 @@ then
 	sudo snap install kubectl --classic	
 fi
 
-echo the script is now complete.
+echo "The script is now complete please restart your server".
 
 sudo usermod -aG docker $USER
 newgrp docker
