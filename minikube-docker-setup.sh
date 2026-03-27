@@ -1,10 +1,9 @@
 #!/bin/bash
 
-ARCH=$(arch)
-
 ## v2 docker, minikube install.
 
 ### installing Docker
+echo "(tput setaf 4) Installing latest docker"
 sudo apt-get update -y
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
 sudo mkdir -p /etc/apt/keyrings
@@ -15,9 +14,7 @@ sudo apt-get install vim htop docker-ce docker-ce-cli containerd.io docker-compo
 
 
 ### Installing Kube tools and Helm.
-if [ $ARCH = "x86_64" ]
-then
-	echo executing on $ARC
+	echo "(tput setaf 4)executing installing Kubernetes tools"
 	
 	curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 	chmod +x ./kubectl
@@ -32,16 +29,7 @@ then
         sudo apt-get update
         sudo apt-get install helm
 
-fi
-
-if [ $ARCH = "aarch64" ]
-then
-	curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-arm64
-	sudo install minikube-linux-arm64 /usr/local/bin/minikube
-	sudo snap install kubectl --classic	
-fi
-
-echo "The script is now complete please restart your server".
+echo "(tput setaf 11)The script is now complete please restart your server".
 
 sudo usermod -aG docker $USER
 newgrp docker
