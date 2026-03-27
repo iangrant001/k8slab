@@ -2,7 +2,7 @@
 
 ### installing Docker
 
-echo "(tput setaf 10) Installing Docker from Docker repos."
+echo "$(tput setaf 10) Installing Docker from Docker repos."
 
 sudo apt-get update -y
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
@@ -15,5 +15,5 @@ sudo apt-get install htop docker-ce docker-ce-cli containerd.io docker-compose-p
 newgrp docker
 sudo usermod -aG docker $USER
 
-echo "(tput setaf 10) the script is now complete, please restart your server"
+echo "$(tput setaf 10) the script is now complete, please restart your server"
 
