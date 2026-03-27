@@ -2,7 +2,7 @@
 
 # Installing Kubetools.
 
-echo "(tput setaf 10) Installing Kubectl, MiniKube and Helm."
+echo "$(tput setaf 10) Installing Kubectl, MiniKube and Helm."
 
 curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x ./kubectl
