@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "$(tput setaf 4)Create new cluster"
-minikube start --addons volumesnapshots,csi-hostpath-driver,ingress --apiserver-port=6443 --container-runtime=containerd -p se-demo
+# echo "$(tput setaf 4)Create new cluster"
+# minikube start --addons volumesnapshots,csi-hostpath-driver,ingress --apiserver-port=6443 --container-runtime=containerd -p se-demo
 
 echo "$(tput setaf 4)update helm repos if already present"
 helm repo update
